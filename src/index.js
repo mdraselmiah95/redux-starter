@@ -1,4 +1,4 @@
-import store from "./store";
+import { bugAdded } from "./actions";
 // Append heading node to the DOM
 // const app = document.querySelector("#root");
 
@@ -9,7 +9,7 @@ import store from "./store";
 //state = reducer(state, action);
 //notify the subscribers
 
-store.dispatch({});
+store.dispatch(bugAdded("bug 1"));
 
 // unsubscribe();
 
