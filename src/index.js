@@ -1,3 +1,4 @@
+import * as actions from "./actionTypes";
 import store from "./store";
 
 // Append heading node to the DOM
@@ -11,13 +12,13 @@ import store from "./store";
 //notify the subscribers
 
 store.dispatch({
-  type: "bugAdded",
+  type: actions.BUG_ADDED,
   payload: {
     description: "Bug1",
   },
 });
 
-unsubscribe();
+// unsubscribe();
 
 store.dispatch({
   type: "bugRemoved",
