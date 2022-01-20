@@ -1,22 +1,13 @@
 {
-  "name": "redux-starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mdraselmiah95/redux-starter.git"
+    "start": "webpack server",
+    "watch": "webpack --watch",
+    "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rasel",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mdraselmiah95/redux-starter/issues"
-  },
-  "homepage": "https://github.com/mdraselmiah95/redux-starter#readme",
   "devDependencies": {
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
