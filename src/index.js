@@ -20,11 +20,11 @@ store.dispatch({
 
 // unsubscribe();
 
-store.dispatch({
-  type: "bugRemoved",
-  payload: {
-    id: 1,
-  },
-});
+// store.dispatch({
+//   type: "bugRemoved",
+//   payload: {
+//     id: 1,
+//   },
+// });
 
 console.log(store.getState());
