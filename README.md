@@ -1,4 +1,4 @@
-## How to create a Webpack on a project:
+## How to Set Up webpack 5:
 
 - First, make a directory command `mkdir [name] ` and `cd [folder name]`.
 - `git init`and pash the command that is created in the GitHub repository.
