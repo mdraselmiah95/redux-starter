@@ -1,4 +1,3 @@
-import * as actions from "./actionTypes";
 import store from "./store";
 
 // Append heading node to the DOM
@@ -11,12 +10,7 @@ import store from "./store";
 //state = reducer(state, action);
 //notify the subscribers
 
-store.dispatch({
-  type: actions.BUG_ADDED,
-  payload: {
-    description: "Bug1",
-  },
-});
+store.dispatch({});
 
 // unsubscribe();
 
