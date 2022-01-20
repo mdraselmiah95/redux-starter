@@ -14,6 +14,8 @@ store.dispatch({
   },
 });
 
+unsubscribe();
+
 store.dispatch({
   type: "bugRemoved",
   payload: {
