@@ -3,6 +3,10 @@ import store from "./store";
 // Append heading node to the DOM
 // const app = document.querySelector("#root");
 
+store.subscribe(() => {
+  console.log("Store change!", store.getState());
+});
+
 store.dispatch({
   type: "bugAdded",
   payload: {
