@@ -1,4 +1,5 @@
-import { bugAdded } from "./actions";
+import { bugAdded, bugResolved } from "./actions";
+import store from "./store";
 // Append heading node to the DOM
 // const app = document.querySelector("#root");
 
@@ -10,6 +11,7 @@ import { bugAdded } from "./actions";
 //notify the subscribers
 
 store.dispatch(bugAdded("bug 1"));
+store.dispatch(bugResolved(1));
 
 // unsubscribe();
 
