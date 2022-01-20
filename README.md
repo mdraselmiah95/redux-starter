@@ -3,7 +3,14 @@
 - First, make a directory command `mkdir [name] ` and `cd [folder name]`.
 - `git init`and pash the command that is created in the GitHub repository.
 - Run command `npm init -y`.
-- Run command `npm i -D webpack webpack-cli` and `code .` to run code in the Visual Studio Code.
+
+#### To begin, install webpack and webpack-cli
+
+```
+npm i -D webpack webpack-cli
+```
+
+- Run command `code .` to run code in the Visual Studio Code.
 - Create `.gitignore` and write `node_modules` for ignore this file.
 - create `src/index.js` file. and write some code.
 
