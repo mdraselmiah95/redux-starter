@@ -3,7 +3,7 @@ import store from "./store";
 // Append heading node to the DOM
 // const app = document.querySelector("#root");
 
-store.subscribe(() => {
+const unsubscribe = store.subscribe(() => {
   console.log("Store change!", store.getState());
 });
 
