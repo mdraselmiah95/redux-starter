@@ -26,7 +26,6 @@ module.exports = {
   ],
   mode: "development",
 };
-
 ```
 
 ```
@@ -38,7 +37,6 @@ and run command npm i
 ```
 "build": "webpack",
 "start": "webpack serve"
-
 ```
 
 - Run command `npm run build` and that will build `dist and main.js` and we have to ignore dist folder in the `.gitignore` folder.
@@ -47,7 +45,6 @@ and run command npm i
 
 ```
 npm i -D html-webpack-plugin
-
 ```
 
 - Create `src/template.html` file and make structure.
