@@ -1,7 +1,7 @@
 import { createAction } from "@reduxjs/toolkit";
 
-const action = createAction("bugUpdated");
-console.log(action({ id: 1 }));
+const bugUpdated = createAction("bugUpdated");
+console.log(bugUpdated({ id: 1 }));
 
 //Action types
 const BUG_ADDED = "bugAdded";
