@@ -23,3 +23,4 @@ store.dispatch(bugResolved(1));
 // });
 
 console.log(store.getState());
+console.log(store);
