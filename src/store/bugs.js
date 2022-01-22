@@ -14,11 +14,12 @@ const slice = createSlice({
         resolved: false,
       });
     },
-    bugRemoved: (bugs, action) => {
+    bugResolved: (bugs, action) => {
       const index = bugs.findIndex((bug) => bug.id === action.payload.id);
       bugs[index].resolved = true;
     },
   },
 });
 
+export const { bugAdded, bugResolved } = slice.actions;
 export default slice.reducer;
