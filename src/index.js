@@ -35,4 +35,7 @@ store.subscribe(() => {
 });
 
 store.dispatch(actions.bugAdded("Bug 1"));
+store.dispatch(actions.bugAdded("Bug 1"));
+store.dispatch(actions.bugAdded("Bug 1"));
+store.dispatch(actions.bugAdded("Bug 1"));
 console.log(store.getState());
