@@ -25,10 +25,12 @@
 // console.log(store.getState());
 // console.log(store);
 import * as actions from "./store/bugs";
-import store from "./store/store";
+import configureStore from "./store/configureStore";
 // store.state = 1;
 // console.log(store.state);
 // console.log(store);
+
+const store = configureStore();
 
 store.subscribe(() => {
   console.log("Store changed!");
