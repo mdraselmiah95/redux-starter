@@ -1,3 +1,8 @@
+import { createAction } from "@reduxjs/toolkit";
+
+const action = createAction("bugUpdated");
+console.log(action());
+
 //Action types
 const BUG_ADDED = "bugAdded";
 const BUG_REMOVED = "bugRemoved";
