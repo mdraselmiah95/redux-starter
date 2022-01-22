@@ -15,3 +15,8 @@ store.dispatch(actions.bugAdded({ description: "Bug 3" }));
 store.dispatch(actions.bugResolved({ id: 1 }));
 
 console.log(store.getState());
+
+const unresolvedBugs = store
+  .getState()
+  .entities.bugs.filter((bug) => !bug.resolved);
+console.log(unresolvedBugs);
