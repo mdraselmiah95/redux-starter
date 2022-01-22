@@ -1,26 +1,26 @@
-import { bugAdded, bugResolved } from "./actions";
-import store from "./store";
-// Append heading node to the DOM
-// const app = document.querySelector("#root");
+// import { bugAdded, bugResolved } from "./actions";
+// import store from "./store";
+// // Append heading node to the DOM
+// // const app = document.querySelector("#root");
 
-// const unsubscribe = store.subscribe(() => {
-//   console.log("Store change!", store.getState());
-// });
+// // const unsubscribe = store.subscribe(() => {
+// //   console.log("Store change!", store.getState());
+// // });
 
-//state = reducer(state, action);
-//notify the subscribers
+// //state = reducer(state, action);
+// //notify the subscribers
 
-store.dispatch(bugAdded("bug 1"));
-store.dispatch(bugResolved(1));
+// store.dispatch(bugAdded("bug 1"));
+// store.dispatch(bugResolved(1));
 
-// unsubscribe();
+// // unsubscribe();
 
-// store.dispatch({
-//   type: "bugRemoved",
-//   payload: {
-//     id: 1,
-//   },
-// });
+// // store.dispatch({
+// //   type: "bugRemoved",
+// //   payload: {
+// //     id: 1,
+// //   },
+// // });
 
-console.log(store.getState());
-console.log(store);
+// console.log(store.getState());
+// console.log(store);
