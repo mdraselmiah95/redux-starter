@@ -24,8 +24,8 @@
 
 // console.log(store.getState());
 // console.log(store);
-import store from "./customStore";
-
+import store, * as actions from "./customStore";
 // store.state = 1;
 // console.log(store.state);
-console.log(store);
+// console.log(store);
+store.dispatch(actions.bugAdded("Bug 1"));
