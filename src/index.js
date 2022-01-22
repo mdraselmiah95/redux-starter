@@ -26,5 +26,6 @@
 // console.log(store);
 import store from "./customStore";
 
-store.state = 1;
-console.log(store.state);
+// store.state = 1;
+// console.log(store.state);
+console.log(store);
