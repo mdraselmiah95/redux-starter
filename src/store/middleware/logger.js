@@ -1,5 +1,5 @@
 //SNA => Store,next,Action
-const logger = (param) => (store) => (next) => (action) => {
+const logger = (param) => (getState, dispatch) => (next) => (action) => {
   console.log("logging", param);
   next(action);
 };
