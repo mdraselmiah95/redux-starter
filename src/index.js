@@ -1,22 +1,30 @@
-import configureStore from "./store/configureStore";
-import { projectAdded } from "./store/projects";
+// import configureStore from "./store/configureStore";
+// import { projectAdded } from "./store/projects";
 
-const store = configureStore();
+// const store = configureStore();
 
-store.subscribe(() => {
-  console.log("Store changed!");
-});
+// store.subscribe(() => {
+//   console.log("Store changed!");
+// });
 
-store.dispatch(projectAdded({ name: "project 1" }));
+// store.dispatch(projectAdded({ name: "project 1" }));
 
-console.log(store.getState());
+// console.log(store.getState());
 
-const unresolvedBugs = store
-  .getState()
-  .entities.bugs.filter((bug) => !bug.resolved);
-console.log(unresolvedBugs);
+// const unresolvedBugs = store
+//   .getState()
+//   .entities.bugs.filter((bug) => !bug.resolved);
+// console.log(unresolvedBugs);
 
 // import { applyMiddleware, createStore } from "redux";
 // import reducer from "./store/reducer";
 
 // const store = createStore(reducer, applyMiddleware(logger));
+
+const store = configureStore();
+
+store.dispatch(() => {
+  // Call an API
+  // When the promise is resolved => dispatch()
+  // If the promise is rejected => dispatch()
+});
