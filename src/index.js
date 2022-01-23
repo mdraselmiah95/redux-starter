@@ -2,9 +2,9 @@ import configureStore from "./store/configureStore";
 
 const store = configureStore();
 
-store.dispatch(() => {
+store.dispatch((dispatch, getState) => {
   // Call an API
   // When the promise is resolved => dispatch()
-  store.dispatch({ type: "bugsReceived", bugs: [1, 2, 4] });
+  dispatch({ type: "bugsReceived", bugs: [1, 2, 4] });
   // If the promise is rejected => dispatch()
 });
