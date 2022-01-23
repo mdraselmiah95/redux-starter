@@ -4,4 +4,7 @@ const logger = (param) => (store) => (next) => (action) => {
   next(action);
 };
 
+//Currying
+// N => 1
+
 export default logger;
