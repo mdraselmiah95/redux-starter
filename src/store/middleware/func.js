@@ -1,5 +1,4 @@
-//Thunk /Func
-
+// Thunk / Func
 const func =
   ({ dispatch, getState }) =>
   (next) =>
