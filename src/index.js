@@ -7,15 +7,6 @@ store.dispatch(
   actions.apiCallBegan({
     url: "/bugs",
     onSuccess: "bugsReceived",
-    onError: "apiRequestFailed",
+    onError: actions.apiCallFailed.type,
   })
 );
-
-store.dispatch({
-  type: "apiCallBegan", //api request method
-  payload: {
-    url: "/bugs",
-    onSuccess: "bugsReceived",
-    onError: "apiRequestFailed",
-  },
-});
