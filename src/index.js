@@ -1,12 +1,9 @@
-import * as actions from "./store/api";
+import { assignBugToUser, loadBugs } from "./store/bugs";
 import configureStore from "./store/configureStore";
 
 const store = configureStore();
 
-store.dispatch(
-  actions.apiCallBegan({
-    url: "/bugs",
-    onSuccess: "bugsReceived",
-    onError: actions.apiCallFailed.type,
-  })
-);
+// UI Layer
+store.dispatch(loadBugs());
+
+setTimeout(() => store.dispatch(assignBugToUser(1, 5)), 2000);
