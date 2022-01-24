@@ -5,6 +5,7 @@ const api =
   (next) =>
   async (action) => {
     if (action.type === "apiCallBegan") return next(action);
+    next(action);
     const { url, method, data, onSuccess, onError } = action.payload;
     try {
       const response = await axios.request({
