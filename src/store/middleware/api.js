@@ -14,7 +14,7 @@ const action = {
 const api =
   ({ dispatch }) =>
   (next) =>
-  (action) => {
+  async (action) => {
     if (action.type === "apiCallBegan") return next(action);
     const { url, method, data, onSuccess, onError } = action.payload;
     try {
