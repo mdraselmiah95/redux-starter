@@ -17,6 +17,9 @@ const api =
       });
       dispatch({ type: onSuccess, payload: response.data });
     } catch (error) {
+      //Generally
+      dispatch(actions.apiCallFailed(error));
+      //Specific
       dispatch({ type: onError, payload: error });
     }
   };
